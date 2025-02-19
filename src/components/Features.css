@@ -9,7 +9,7 @@
     padding-top: 300px;
     padding-bottom: 400px;
     position: relative;
-    background-image: url("./New-IMG/IMG_20230107_151150.webp");
+    background-image: url("/New-IMG/IMG_20230107_151150.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 42%;
-    background-image: url("./wave2.svg");
+    background-image: url("/wave2.svg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -41,7 +41,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./New-IMG/IMG_20230107_151150.webp");
+    background-image: url("/New-IMG/IMG_20230107_151150.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
