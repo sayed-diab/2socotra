@@ -167,11 +167,11 @@ export default function Features() {
           </div>
           <img
             className="features-img"
-            src="./Dragon-blood-trees-Socotra.jpg"
+            src="./Dragon-blood-trees-Socotra.webp"
           />
           <img
             className="features-img"
-            src="./camel-drone-traveling-socotra.jpg"
+            src="./camel-drone-traveling-socotra.webp"
           />
         </div>
       </div>

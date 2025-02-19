@@ -12,7 +12,7 @@ export default function Footer() {
           />
           <img
             className="logo-small"
-            src="/logo3.png"
+            src="./logo3.png"
             alt="logo"
           />
         </a>
