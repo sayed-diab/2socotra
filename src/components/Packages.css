@@ -1,0 +1,203 @@
+:root {
+    --f: 15px;
+    /* control the folded part*/
+    --r: 15px;
+    /* control the ribbon shape */
+    --t: 18px;
+    /* the top offset */
+
+}
+
+.pricing {
+    width: 100%;
+    padding-top: 50px;
+    background-color: #f3f4f5;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.pricing h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #FF9800;
+    -moz-text-decoration-color: #FF9800;
+}
+
+
+
+.pricing .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding-top: 30px; */
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF9800;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    position: relative;
+
+    @media (max-width: 400px) {
+        width: 80%;
+        padding-top: 50px;
+    }
+}
+
+.ribbon-2 {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    height: 35px;
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 75px;
+    position: absolute;
+    inset: var(--t) calc(-1*var(--f)) auto auto;
+    padding: 0 10px var(--f) calc(10px + var(--r));
+    clip-path:
+        polygon(0 0, 100% 0, 100% calc(100% - var(--f)), calc(100% - var(--f)) 100%,
+            calc(100% - var(--f)) calc(100% - var(--f)), 0 calc(100% - var(--f)),
+            var(--r) calc(50% - var(--f)/2));
+    background: #BD1550;
+    box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+}
+
+.card:nth-of-type(1) {
+    background-color: #FF9800;
+    padding-bottom: 60px;
+}
+
+
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
+.card h2:not(.solo) {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.card .solo {
+    color: black;
+    border: 1px solid #FF9800;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    height: 36px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+}
+
+.card .detal {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card:nth-of-type(1) {
+    color: white;
+}
+
+.card:nth-of-type(1) .solo {
+    border: 1px solid black;
+}
+
+.card .btn {
+    background-color: #FF9800;
+    color: white;
+    border: 1px solid #FF9800;
+    width: 120px;
+    height: 46px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+
+
+.card:nth-of-type(1) .btn,
+.card:last-of-type .btn {
+    border: 1px solid white;
+}
+
+.card .btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #FF9800;
+}
+
+.card.group {
+    margin: 0 auto;
+}
+
+.title-tour {
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #dbdb20;
+    -moz-text-decoration-color: #dbdb20;
+}
+
+.title-tour:last-of-type {
+    margin-bottom: 40px;
+}

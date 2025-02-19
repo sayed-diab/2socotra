@@ -1,0 +1,117 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("/IMG_6471a.JPG");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-image: url("/wave.svg");
+    background-size: cover;
+
+}
+
+.info {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: fit-content;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.info img {
+    width: 100px;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin: 0 !important;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.2;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hero .title {
+    color: #FF9800;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+    .info::before {
+        width: 120%;
+        height: 140%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .hero .title {
+        font-size: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info::before {
+        width: 120%;
+        height: 140%;
+        opacity: 0.3;
+    }
+
+    .hero::after {
+        height: 27%;
+    }
+}
